@@ -42,7 +42,6 @@ function App() {
           :
           <h3>LOADING</h3>}
       </div>
-      <Outlet />
     </Section>
   );
 }

@@ -1,15 +1,15 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (
       <div className="navbar">
-        <Link to="/">
+        <NavLink exact to="/">
           <img alt="logo" className="logo" src={require("../assets/logo.jpg")} />
-        </Link>
-        <Link to="/movies">Movies</Link>
-        <Link to="/tv_shows">TV Shows</Link>
-        <Link to="/signup">Sign Up</Link>
-        <Link to="/login">Log in</Link>
+        </NavLink>
+        <NavLink exact to="/movies">Movies</NavLink>
+        <NavLink exact to="/tv_shows">TV Shows</NavLink>
+        <NavLink exact to="/signup">Sign Up</NavLink>
+        <NavLink exact to="/login">Log in</NavLink>
       </div>
     );
 };
